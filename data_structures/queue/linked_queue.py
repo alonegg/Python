@@ -1,7 +1,9 @@
-""" A Queue using a linked list like structure """
+"""A Queue using a linked list like structure"""
+
 from __future__ import annotations
 
-from typing import Any, Iterator
+from collections.abc import Iterator
+from typing import Any
 
 
 class Node:
@@ -21,7 +23,7 @@ class LinkedQueue:
     >>> queue.put(5)
     >>> queue.put(9)
     >>> queue.put('python')
-    >>> queue.is_empty();
+    >>> queue.is_empty()
     False
     >>> queue.get()
     5
@@ -95,7 +97,7 @@ class LinkedQueue:
         >>> queue = LinkedQueue()
         >>> queue.get()
         Traceback (most recent call last):
-        ...
+            ...
         IndexError: dequeue from empty queue
         >>> for i in range(1, 6):
         ...     queue.put(i)
@@ -115,7 +117,7 @@ class LinkedQueue:
         >>> queue = LinkedQueue()
         >>> queue.get()
         Traceback (most recent call last):
-        ...
+            ...
         IndexError: dequeue from empty queue
         >>> queue = LinkedQueue()
         >>> for i in range(1, 6):

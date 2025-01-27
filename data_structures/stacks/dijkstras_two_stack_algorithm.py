@@ -10,7 +10,7 @@ such as: (5 + ((4 * 2) * (2 + 3)))
 
 THESE ARE THE ALGORITHM'S RULES:
 RULE 1: Scan the expression from left to right. When an operand is encountered,
-        push it onto the the operand stack.
+        push it onto the operand stack.
 
 RULE 2: When an operator is encountered in the expression,
         push it onto the operator stack.
@@ -29,6 +29,7 @@ RULE 5: When the entire infix expression has been scanned, the value left on
 
 NOTE:   It only works with whole numbers.
 """
+
 __author__ = "Alexander Joslin"
 
 import operator as op
