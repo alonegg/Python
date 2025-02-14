@@ -15,6 +15,7 @@ with this property.
 Find the smallest prime which, by replacing part of the number (not necessarily
 adjacent digits) with the same digit, is part of an eight prime value family.
 """
+
 from __future__ import annotations
 
 from collections import Counter
@@ -37,7 +38,7 @@ def prime_sieve(n: int) -> list[int]:
     is_prime[1] = False
     is_prime[2] = True
 
-    for i in range(3, int(n ** 0.5 + 1), 2):
+    for i in range(3, int(n**0.5 + 1), 2):
         index = i * 2
         while index < n:
             is_prime[index] = False
